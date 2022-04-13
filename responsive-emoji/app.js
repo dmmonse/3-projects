@@ -3,16 +3,16 @@ const openFace= document.querySelector('.open')
 
 //add event listener//
 
-closedFace.addEventListener('click',()=> {
+closedFace.addEventListener('click', () => {
     if(openFace.classList.contains('open')){
-        openFace.classList.add('acrive');
+        openFace.classList.add('active');
         closedFace.classList.remove('active');
     }
 });
-openFace.addEventListener('click', () => {
+openFace.addEventListener('click',() => {
     if(closedFace.classList.contains('closed')){
         closedFace.classList.add('active');
         openFace.classList.remove('active');
-
     }
 });
+

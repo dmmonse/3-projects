@@ -25,8 +25,8 @@ let data=[{
 ];
 
 const info = document.querySelector('#info');
-let details =data.map(function(){
-    return('<div>'+ item.name+ '</div>';
+let details =data.map(function(item){
+    return('<div>'+' the hex code for '+ item.color+ ' is '+ item.code+'</div>');
 });
 
-info.innerHTML =details.join('/n');
+info.innerHTML = details.join('');
